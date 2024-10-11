@@ -67,4 +67,12 @@ public class LionTest {
         assertEquals(2, food.size());
         assertEquals("Животные", food.get(0));
     }
+
+    @Test
+    public void testLionessDoesNotHaveMane() throws Exception {
+        // Создаем экземпляр Lion с полом "Самка"
+        Lion lioness = new Lion("Самка", feline);
+        // Проверяем, что львица не имеет гривы
+        assertEquals(false, lioness.doesHaveMane());
+    }
 }
