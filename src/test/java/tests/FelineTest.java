@@ -19,7 +19,6 @@ public class FelineTest {
 
     @Before
     public void init() {
-        MockitoAnnotations.initMocks(this);
         feline = new Feline(); // Инициализация экземпляра Feline
     }
 
